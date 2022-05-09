@@ -11,22 +11,40 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
+.logoname {
+    display: flex;
+    max-width: 270px;
+    width: 100%;
+}
+
 .logo {
     position: relative;
     display: block;
     float: inline-start;
-    margin-right: 25%;
     margin-left: 15px;
+    margin-top: 7px;
+    margin-bottom: 7px;
 }
+
+.name {
+    display: block;
+    color: #16cba7;
+    float: left;
+    text-align: center;
+    padding: 14px;
+    font-size: 18px;
+}
+
 #navbar a {
     float: left;
-   display: block;
+    display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 14px;
     text-decoration: none;
     margin-right: 25px;
-    margin-top: 14px;
+    margin-top: 18px;
     transition: 0.3s ease-in-out;
     opacity: 1;
 }
