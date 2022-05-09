@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    height: 100%;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #141414;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.logo {
+    position: relative;
+    display: block;
+    float: inline-start;
+    margin-right: 25%;
+    margin-left: 15px;
+}
+
+#navbar a {
+    float: left;
+   display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    margin-right: 25px;
+    margin-top: 14px;
+}
+
+.active {
+    color: #16cba7!important;
+}
+
+#navbar a:active {
+    color:#16cba7;
+}
+
+.nav-icon {
+    float: right!important;
+}
+
+.menu {
+    justify-content: center;
+}
