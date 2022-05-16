@@ -1,6 +1,10 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
+setInterval(() => {
+    nextSlide()
+}, 5000);
+
 function nextSlide() {
     showSlides(slideIndex += 1);
 }

@@ -105,7 +105,7 @@ body {
     color: white;
     font-weight: bold;
     font-size: 16px;
-    transition: 0.6s ease;
+    transition: 0.7s ease;
     border-radius: 0 3px 3px 0;
 }
 
@@ -121,32 +121,136 @@ body {
 
 .slider .item {
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 1.8s;
+}
+
+.slider .item .text {
+    position: absolute;
+    top: 250px;
+    left: 70%;
+    font-size: 36px;
+    color: #fff;
 }
 
 @keyframes fade {
     from {
-        opacity: 0.4
+        opacity: 0.8
     }
     to {
         opacity: 1
     }
 }
 
-.cont {
-    margin-top: 150px;
+.content {
+    margin-top: 0;
 }
 
-.f-navbar {
+.p-cont {
+    margin-top: 125px;
+}
+
+.p-cont-last {
+    margin-bottom: 30px;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 450px;
+    margin: 0 10px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    display: block;
+    padding-bottom: 150%;
+    width: 100%;
+}
+
+.card__background {
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform-origin: center;
+    transform: scale(1) translateZ(0);
+    transition: all 0.3s ease;
+}
+
+.card-wrapper:hover > .card:not(:hover) .card__background {
+    filter: brightness(0.7) blur(20px) contrast(0.7);
+}
+
+.card__content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20px;
+    text-align: center;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.card__title {
+    font-size: 30px;
+    text-shadow: 4px 4px 10px rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+.card__date {
+    font-size: 14px;
+    text-shadow: 3px 3px 30px rgba(0, 0, 0, 4);
+}
+
+.f-nav {
     overflow: hidden;
     background-color: #141414fd;
     bottom: 0;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
-.f-navbar a {
+.f-navbar {
+    width: 40%;
+}
+
+.f-navbar, .f-navbar2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.f-navbar p {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: left;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    opacity: 1;
+    padding: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.f-navbar2 a {
     float: left;
     display: block;
     color: #f2f2f2;
