@@ -157,6 +157,10 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 125px;
+    width: 962px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card {
@@ -175,7 +179,7 @@ body {
     width: 100%;
 }
 
-.card__background {
+.card-background {
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -188,11 +192,11 @@ body {
     transition: all 0.3s ease;
 }
 
-.card-wrapper:hover > .card:not(:hover) .card__background {
+.card-wrapper:hover > .card:not(:hover) .card-background {
     filter: brightness(0.7) blur(20px) contrast(0.7);
 }
 
-.card__content {
+.card-content {
     position: absolute;
     left: 0;
     right: 0;
@@ -202,13 +206,13 @@ body {
     font-family: sans-serif;
 }
 
-.card__title {
+.card h3 {
     font-size: 30px;
     text-shadow: 4px 4px 10px rgb(0, 0, 0);
     margin-bottom: 10px;
 }
 
-.card__date {
+.card p {
     font-size: 14px;
     text-shadow: 3px 3px 30px rgba(0, 0, 0, 4);
 }
@@ -220,6 +224,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
+    margin-top: 30px;
 }
 
 .f-navbar {
