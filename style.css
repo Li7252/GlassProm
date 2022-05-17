@@ -232,34 +232,32 @@ body {
 
 .index-images {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     max-width: 100%;
     padding: 20px 30px;
 }
 .index-images-item {
-    width: 33%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
-}
- 
-.index-txt {
-    max-width: 60%;
+    padding: 15px 0;
 }
 
-.index-img {
-    max-height: 300px;
-    max-width: 300px;
-    margin-left: 30px;
+.index-txt {
+    padding: 0 30px;
 }
 
 .index-img img {
-    position: relative;
     width: 300px;
-    object-fit: cover;
+    height: 200px;
+    border-radius: 15px;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
 .p-cont {
