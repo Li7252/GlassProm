@@ -124,12 +124,42 @@ body {
     animation-duration: 1.8s;
 }
 
-.slider .item .text {
+.slider .item .text1 {
     position: absolute;
     top: 250px;
-    left: 70%;
+    left: 485px;
     font-size: 36px;
     color: #fff;
+    animation-name: moveRight;
+    animation-duration: 1.8s;
+}
+
+@keyframes moveRight {
+    from {
+        transform: translateX(0)
+    }
+    to {
+        transform: translateX(485px)
+    }
+}
+
+.slider .item .text2 {
+    position: absolute;
+    top: 250px;
+    left: 350px;
+    font-size: 36px;
+    color: #fff;
+    animation-name: moveRight;
+    animation-duration: 1.8s;
+}
+
+@keyframes moveRight {
+    from {
+        transform: translateX(0)
+    }
+    to {
+        transform: translateX(350px)
+    }
 }
 
 @keyframes fade {
@@ -143,6 +173,13 @@ body {
 
 .content {
     margin-top: 0;
+}
+
+.index-img {
+    position: absolute;
+    height: 300px;
+    width: auto;
+    left: 30px;
 }
 
 .p-cont {
