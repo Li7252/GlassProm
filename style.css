@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
 body {
     margin: 0;
     height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 .content {
@@ -9,6 +14,12 @@ body {
 
 .footer {
     flex: 1 0 auto;
+}
+
+.nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 3px;
 }
 
 #navbar {
@@ -24,7 +35,7 @@ body {
 
 .logoname {
     display: flex;
-    max-width: 220px;
+    max-width: 250px;
     width: 100%;
 }
 
@@ -73,7 +84,10 @@ body {
 }
 
 .nav-icon {
-    float: right!important;
+    max-width: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .container {
@@ -127,7 +141,7 @@ body {
 .slider .item .text1 {
     position: absolute;
     top: 250px;
-    left: 485px;
+    left: 33%;
     font-size: 36px;
     color: #fff;
     animation-name: moveRight;
@@ -146,7 +160,7 @@ body {
 .slider .item .text2 {
     position: absolute;
     top: 250px;
-    left: 350px;
+    left: 23%;
     font-size: 36px;
     color: #fff;
     animation-name: moveRight;
@@ -174,7 +188,7 @@ body {
 .silka {
     text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 0.3em;
+    letter-spacing: 1.5px;
     background-color: #11a88a;
     padding: 20px 40px;
     color: #fff;
@@ -222,7 +236,7 @@ body {
     align-items: flex-start;
     justify-content: center;
     max-width: 100%;
-    padding: 0px 30px;
+    padding: 20px 30px;
 }
 .index-images-item {
     width: 33%;
