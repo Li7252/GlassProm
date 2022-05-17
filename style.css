@@ -200,11 +200,16 @@ body {
 }
 
 .silka:hover::before {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
 }
+
 .button-call {
     display: flex;
+    position: absolute;
+    margin-left: 39%;
+    margin-bottom: 30px;
+    margin-top: -10%;
 }
 
 .content {
