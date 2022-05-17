@@ -177,9 +177,18 @@ body {
 
 .index-images {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
+    justify-content: center;
     max-width: 100%;
+    padding: 0px 30px;
+}
+.index-images-item {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
  
 .index-txt {
