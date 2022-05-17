@@ -171,6 +171,39 @@ body {
     }
 }
 
+.button-call a {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    background-color: #11a88a;
+    padding: 20px 40px;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.button-call a::before {
+    content:'';
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle closest-side, #16cba7, #ff000000);
+    border-radius: 50%;
+    z-index: -1;
+    transform: translate(-50%,-50%);
+    transition: width 0.3s linear, height 0.3s linear;
+}
+
+.button-call a:hover:before {
+    width: 70px;
+    height: 70px;
+}
+
 .content {
     margin-top: 0;
 }
