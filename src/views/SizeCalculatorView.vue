@@ -87,7 +87,7 @@ export default {
   },
   computed: {
     calcResult() {
-      return this.result = this.fpwl + this.mpwl + this.pl + this.fpwr + this.wmpt
+      return this.result = this.fpwl + this.mpwl + this.pl + this.fpwr + this.wmpt //Расчеты размеров
     }
   }
 }
