@@ -29,7 +29,7 @@
       </Transition>
       <Transition>
         <div class="one" >
-          <div v-if="checkIdTwo !== null" class="button-call"><router-link to="/size" class="silka" id="btn">Следующий шаг <b> > </b></router-link></div>
+          <div v-if="checkIdTwo !== null" class="button-call"><a @click="goTo" class="silka" id="btn">Следующий шаг <b> > </b></a></div>
         </div>
       </Transition>
     </div>
@@ -40,6 +40,7 @@
 
 import {ref} from "vue";
 import {useCounterStore} from "../stores/counter";
+import router from "../router";
 
 const calcOne = ref([
     {
@@ -88,6 +89,10 @@ const handleChangeTwo = (value, id) => {
   checkedItemsTwo.value = value
   checkIdTwo.value = id
   store.result = [checkedItems.value, checkedItemsTwo.value]
+}
+
+const goTo = () => {
+  router.push({path: '/size'})
 }
 
 </script>
