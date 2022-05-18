@@ -88,10 +88,12 @@ const handleChangeOne = (value, id) => {
 const handleChangeTwo = (value, id) => {
   checkedItemsTwo.value = value
   checkIdTwo.value = id
-  store.result = [checkedItems.value, checkedItemsTwo.value]
 }
 
 const goTo = () => {
+  const resultItem = {checkedItems: checkedItems.value, checkedItemsTwo: checkedItemsTwo.value}
+  const local = JSON.stringify(resultItem)
+  localStorage.setItem('resultItem', local)
   router.push({path: '/size'})
 }
 

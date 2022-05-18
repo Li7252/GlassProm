@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
-    <div class="result-item"> Форма изделия: {{store.result[0]}} </div>
-    <div class="result-item"> Тип дверей: {{store.result[1]}} </div>
+    <div class="result-item"> Форма изделия: {{resultCalc.checkedItems}} </div>
+    <div class="result-item"> Тип дверей: {{resultCalc.checkedItemsTwo}} </div>
     <div class="calculator-size">
       <div class="calculator-size-item">
         <div class="calculator-size-item-img">
@@ -77,6 +77,7 @@ export default {
   // Тут записаны переменные которые отвечают за input
   data() {
     return {
+      resultCalc: {},
       fpwl: 50, //Ширина неподвижной части слева
       mpwl: 50, //Ширина подвижной части слева
       pl: 190, //Высота изделия
@@ -84,6 +85,9 @@ export default {
       wmpt: 50, //Ширина подвижной части справа
       result: 0,
     }
+  },
+  mounted() {
+    this.resultCalc = JSON.parse(localStorage.getItem('resultItem'))
   },
   computed: {
     calcResult() {
