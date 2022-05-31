@@ -190,6 +190,14 @@
       <div class="result-sum">
         <h1>{{ calcResult }}</h1>
       </div>
+      <div
+        class="button-call"
+        v-if="calcResult != 'Выберите тип стекла и профиля'"
+      >
+        <a class="silka" @click="addOrder" id="btn">
+          Следующий шаг <b> > </b>
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -222,16 +230,37 @@ export default {
     calcResult() {
       const sum = ((this.fpwl * this.pl) / 10000) * this.steclo + this.profil;
       if (sum != 0 && this.profil != 0) {
+        this.result = sum.toFixed(2);
         return sum.toFixed(2) + " руб.";
       } else {
         return "Выберите тип стекла и профиля";
       }
     },
   },
+  methods: {
+    addOrder() {
+      const { result } = this;
+      const order = {
+        result,
+        form: this.resultCalc.checkedItems,
+        type: this.resultCalc.checkedItemsTwo,
+      };
+      localStorage.setItem("order", JSON.stringify(order));
+      alert("Успешный заказ!");
+      this.$router.push("/");
+    },
+  },
 };
 </script>
 
 <style scoped>
+.button-call {
+  /* display: flex; */
+  position: relative;
+  margin-left: 0;
+  margin-bottom: 0px;
+  margin-top: 0;
+}
 .select-steclo {
   display: flex;
   justify-content: space-between;
