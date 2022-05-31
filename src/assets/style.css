@@ -377,6 +377,13 @@ body {
     margin-left: 10px;
     margin-top: 10px;
 }
+.button-call {
+    display: flex;
+    position: absolute;
+    margin-left: 39%;
+    margin-bottom: 30px;
+    margin-top: -10%;
+}
 
 .f-navbar a:hover {
     opacity: 0.7;
