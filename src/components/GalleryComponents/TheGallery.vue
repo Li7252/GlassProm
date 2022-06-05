@@ -3,52 +3,52 @@
     <h1 class="heading">Наши работы</h1>
     <div class="gallery">
       <div class="gallery-item" v-for="item in image">
-        <img class="gallery-image"
-             :src="'image/gallery/' + item.item"
-             alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer" />
+        <img
+          class="gallery-image"
+          :src="'src/assets/image/gallery/' + item.item"
+          alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer"
+        />
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-
-import {ref} from "vue";
+import { ref } from "vue";
 
 const image = ref([
-  {item: '9.jpg'},
-  {item: '11.jpg'},
-  {item: '22.jpg'},
-  {item: '23.jpg'},
-  {item: '25.jpg'},
-  {item: '26.jpg'},
-  {item: '27.jpg'},
-  {item: '44.jpg'},
-  {item: '66.jpg'},
-  {item: '77.jpg'},
-  {item: 'WhatsApp Image 2020-02-29 at 20.01.57.jpeg'},
-  {item: 'WhatsApp Image 2020-03-26 at 17.58.52 (1).jpeg'},
-  {item: 'WhatsApp Image 2020-03-26 at 17.58.53 (1) (1).jpeg'},
-  {item: 'WhatsApp Image 2020-07-08 at 12.35.31.jpeg'},
-  {item: 'zerkalo1.jpg'},
-  {item: 'zerkalo2.jpg'},
-  {item: 'zerkalo3.jpg'},
-  {item: 'zerkalo4.jpg'},
-  {item: 'zerkalo5.jpg'},
-  {item: 'zerkalo6.jpg'},
-  {item: 'zerkalo7.jpg'},
-  {item: 'zerkalo8.jpg'},
-  {item: 'zerkalo9.jpg'},
-  {item: 'zerkalo10.jpg'},
-  {item: 'zerkalo11.jpg'},
-  {item: 'zerkalo12.jpg'},
-  {item: 'zerkalo13.jpg'},
-  {item: 'zerkalo14.jpg'},
-  {item: 'zerkalo15.jpg'},
-  {item: 'zerkalo16.jpg'},
-  {item: 'zerkalo17.jpg'},
-])
-
+  { item: "9.jpg" },
+  { item: "11.jpg" },
+  { item: "22.jpg" },
+  { item: "23.jpg" },
+  { item: "25.jpg" },
+  { item: "26.jpg" },
+  { item: "27.jpg" },
+  { item: "44.jpg" },
+  { item: "66.jpg" },
+  { item: "77.jpg" },
+  { item: "WhatsApp Image 2020-02-29 at 20.01.57.jpeg" },
+  { item: "WhatsApp Image 2020-03-26 at 17.58.52 (1).jpeg" },
+  { item: "WhatsApp Image 2020-03-26 at 17.58.53 (1) (1).jpeg" },
+  { item: "WhatsApp Image 2020-07-08 at 12.35.31.jpeg" },
+  { item: "zerkalo1.jpg" },
+  { item: "zerkalo2.jpg" },
+  { item: "zerkalo3.jpg" },
+  { item: "zerkalo4.jpg" },
+  { item: "zerkalo5.jpg" },
+  { item: "zerkalo6.jpg" },
+  { item: "zerkalo7.jpg" },
+  { item: "zerkalo8.jpg" },
+  { item: "zerkalo9.jpg" },
+  { item: "zerkalo10.jpg" },
+  { item: "zerkalo11.jpg" },
+  { item: "zerkalo12.jpg" },
+  { item: "zerkalo13.jpg" },
+  { item: "zerkalo14.jpg" },
+  { item: "zerkalo15.jpg" },
+  { item: "zerkalo16.jpg" },
+  { item: "zerkalo17.jpg" },
+]);
 </script>
 
 <style scoped>
@@ -119,5 +119,4 @@ const image = ref([
     margin: 0 80px;
   }
 }
-
 </style>

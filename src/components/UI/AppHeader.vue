@@ -2,7 +2,7 @@
   <header>
     <div id="navbar">
       <div class="logoname">
-        <img src="image/logo.png" alt="logo" class="logo" />
+        <img src="@/assets/image/logo.png" alt="logo" class="logo" />
         <p class="name"><b>Glass Prom</b></p>
       </div>
       <div class="link-container">
@@ -15,10 +15,18 @@
       </div>
       <div class="nav-icon">
         <a href="tel:+79045022303">
-          <img class="nav-icon-item" src="image/icon-call.png" alt="call" />
+          <img
+            class="nav-icon-item"
+            src="@/assets/image/icon-call.png"
+            alt="call"
+          />
         </a>
         <a @click="openModal">
-          <img class="nav-icon-item" src="image/icon-cart.png" alt="cart" />
+          <img
+            class="nav-icon-item"
+            src="@/assets/image/icon-cart.png"
+            alt="cart"
+          />
         </a>
       </div>
     </div>

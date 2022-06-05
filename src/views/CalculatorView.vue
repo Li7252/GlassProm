@@ -10,7 +10,7 @@
             :key="id"
             @click="handleChangeOne(item.value, id)"
           >
-            <img :src="'image/calculator/' + item.image" alt="" />
+            <img :src="'src/assets/image/calculator/' + item.image" alt="" />
             <div class="calculator__calc-input">
               <input
                 type="checkbox"
@@ -34,7 +34,7 @@
               :key="id"
               @click="handleChangeTwo(item.value, id)"
             >
-              <img :src="'image/calculator/' + item.image" alt="" />
+              <img :src="'src/assets/image/calculator/' + item.image" alt="" />
               <div class="calculator__calc-input">
                 <input
                   type="checkbox"

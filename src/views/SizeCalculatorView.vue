@@ -8,7 +8,7 @@
       <div v-if="resultCalc.checkedItems != 'Душевое угловое ограждение'">
         <div class="calculator-size-item">
           <div class="calculator-size-item-img">
-            <img src="image/calcSIze/left-section-width.svg" alt="" />
+            <img src="@/assets/image/calcSIze/left-section-width.svg" alt="" />
           </div>
           <div class="calculator-size-title">Ширина, см:</div>
           <div class="calculator-size-input">
@@ -26,7 +26,7 @@
         </div>
         <div class="calculator-size-item">
           <div class="calculator-size-item-img">
-            <img src="image/calcSIze/cab-height.svg" alt="" />
+            <img src="@/assets/image/calcSIze/cab-height.svg" alt="" />
           </div>
           <div class="calculator-size-title">Высота изделия, см:</div>
           <div class="calculator-size-input">
@@ -46,7 +46,7 @@
       <div v-else>
         <div class="calculator-size-item">
           <div class="calculator-size-item-img">
-            <img src="image/calcSIze/left-section-width.svg" alt="" />
+            <img src="@/assets/image/calcSIze/left-section-width.svg" alt="" />
           </div>
           <div class="calculator-size-title">Ширина неподвижной части, см:</div>
           <div class="calculator-size-input">
@@ -64,7 +64,7 @@
         </div>
         <div class="calculator-size-item">
           <div class="calculator-size-item-img">
-            <img src="image/calcSIze/cab-height.svg" alt="" />
+            <img src="@/assets/image/calcSIze/cab-height.svg" alt="" />
           </div>
           <div class="calculator-size-title">Высота изделия, см:</div>
           <div class="calculator-size-input">
@@ -82,7 +82,7 @@
         </div>
         <div class="calculator-size-item">
           <div class="calculator-size-item-img">
-            <img src="image/calcSIze/left-section-width.svg" alt="" />
+            <img src="@/assets/image/calcSIze/left-section-width.svg" alt="" />
           </div>
           <div class="calculator-size-title">Ширина дверей, см:</div>
           <div class="calculator-size-input">
@@ -100,7 +100,7 @@
         </div>
         <div class="calculator-size-item">
           <div class="calculator-size-item-img">
-            <img src="image/calcSIze/right-section-width.svg" alt="" />
+            <img src="@/assets/image/calcSIze/right-section-width.svg" alt="" />
           </div>
           <div class="calculator-size-title">
             Ширина неподвижной части со стороны дверей, см:
@@ -121,7 +121,7 @@
       </div>
       <div class="select-steclo">
         <div class="select-steclo-item" @click="steclo = 3980">
-          <div><img src="image/calcSIze/glass-transparent.png" /></div>
+          <div><img src="@/assets/image/calcSIze/glass-transparent.png" /></div>
           <div>
             <input type="radio" id="one" value="3980" v-model="steclo" />
             <label for="one">Прозрачное стекло</label>
@@ -129,7 +129,7 @@
         </div>
         <div class="select-steclo-item" @click="steclo = 5525">
           <div>
-            <img src="image/calcSIze/glass-matte.png" />
+            <img src="@/assets/image/calcSIze/glass-matte.png" />
           </div>
           <div>
             <input type="radio" id="two" value="5525" v-model="steclo" />
@@ -138,7 +138,7 @@
         </div>
         <div class="select-steclo-item" @click="steclo = 6665">
           <div>
-            <img src="image/calcSIze/glass-tinted.png" />
+            <img src="@/assets/image/calcSIze/glass-tinted.png" />
           </div>
           <div>
             <input type="radio" id="thre" value="6665" v-model="steclo" />
@@ -148,7 +148,9 @@
       </div>
       <div class="select-profil">
         <div class="select-steclo-item" @click="profil = 7148">
-          <div><img src="image/calcSIze/profile-chrome-matte.png" /></div>
+          <div>
+            <img src="@/assets/image/calcSIze/profile-chrome-matte.png" />
+          </div>
           <div>
             <input type="radio" id="profilone" value="7148" v-model="profil" />
             <label for="one">Хромированный</label>
@@ -156,7 +158,7 @@
         </div>
         <div class="select-steclo-item" @click="profil = 12120">
           <div>
-            <img src="image/calcSIze/profile-bronze.png" />
+            <img src="@/assets/image/calcSIze/profile-bronze.png" />
           </div>
           <div>
             <input type="radio" id="profiltwo" value="12120" v-model="profil" />
@@ -165,7 +167,7 @@
         </div>
         <div class="select-steclo-item" @click="profil = 13404">
           <div>
-            <img src="image/calcSIze/profile-gold.png" />
+            <img src="@/assets/image/calcSIze/profile-gold.png" />
           </div>
           <div>
             <input
@@ -179,7 +181,7 @@
         </div>
         <div class="select-steclo-item" @click="profil = 12180">
           <div>
-            <img src="image/calcSIze/profile-chrome.png" />
+            <img src="@/assets/image/calcSIze/profile-chrome.png" />
           </div>
           <div>
             <input type="radio" id="profilfor" value="12180" v-model="profil" />
